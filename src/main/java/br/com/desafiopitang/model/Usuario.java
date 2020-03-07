@@ -6,6 +6,29 @@ public class Usuario {
 	private String nome;
 	private String email;
 	private String senha;
+	private long ddd;
+	private String numero;
+	private String tipo;
+	
+	
+	public long getDdd() {
+		return ddd;
+	}
+	public void setDdd(long ddd) {
+		this.ddd = ddd;
+	}
+	public String getNumero() {
+		return numero;
+	}
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
 	public int getId() {
 		return id;
 	}
@@ -29,6 +52,10 @@ public class Usuario {
 	}
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	@Override
+	public String toString() {
+		return "Usuario [id=" + id + ", nome=" + nome + ", email=" + email + ", senha=" + senha + "]";
 	}
 	
 	
